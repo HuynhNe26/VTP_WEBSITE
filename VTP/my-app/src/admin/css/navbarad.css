@@ -1,0 +1,160 @@
+
+body {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  background:#EDEEF0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.sidebar {
+  width: 20%;
+  background: white;
+  padding: 10px;
+  height:auto;
+  border-radius: 10px;
+  border:2px #002856;
+  margin-left: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .admin {
+  height:30px;
+  margin: 20px 0px 0px 30px;
+}
+
+.sidebar .menu-section {
+  background: white; /* Nền trắng mặc định */
+    border-radius: 5px ; /* Góc bo tròn */
+    padding: 20px 30px; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Font chữ hiện đại */
+    font-size: 14px; /* Kích thước chữ */
+    color:#002856;
+    cursor: pointer; /* Con trỏ tay khi hover */
+    display: flex; /* Căn giữa biểu tượng và chữ */
+    gap: 15px; /* Khoảng cách giữa biểu tượng và chữ */
+    transition: background 0.3s, color 0.3s; /* Chuyển đổi mượt mà */
+    margin: 5px 10px 5px 10px;
+    text-decoration: none;
+    font-weight:bold ;
+}
+.sidebar .menu-section .icon {
+  height: 18px;
+  width:18px;
+}
+
+.sidebar .logout {
+  background: none;
+  border: none;
+  height:20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.sidebar .menu-section:hover {
+  background: #002856; /* Nền xanh khi hover */
+    color: #FFFFFF; /* Chữ trắng khi hover */
+    border-color: #002856 ; /* Viền xanh khi hover */
+    
+}
+.logo{
+  height:35px;
+  margin: 20px 0px 5px 15px ;
+}
+.layout{
+  width:1000px;
+  height: 100px;
+  padding: 0px 20px 0px 10px;
+  display: flex;
+}
+.layout .button{
+  display:flex;
+  width: 250px;
+  height: 60px;
+  margin: 20px 20px 0px 15px;
+  background: #FFFFFF; /* Nền trắng của nút */
+  border-color: #002856;
+    border-radius: 10px; /* Góc bo tròn *//* Padding tổng thể */ /* Chiều cao cố định */
+    display: flex; /* Sử dụng flex để căn giữa icon và text */
+    align-items: center;
+    gap: 20px; /* Khoảng cách giữa icon và text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng nhẹ */
+    cursor: pointer; /* Con trỏ tay khi hover */
+    transition: background 0.3s, box-shadow 0.3s; 
+}
+.layout .button .text{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 13px;
+  color:#002856;
+  font-weight:500;
+}
+.layout .button .icon{
+  padding-left:10px;
+  height:40px;
+  width: 40px;
+  border-radius: 10px;
+}
+.layout .button:hover{
+  background: #002856;
+  color:white
+}
+.layout .button .text:hover{
+  color:white
+}
+.main_content{
+  height: auto;
+  width: 1100px;
+  padding: 0px 20px 0px 20px;
+  margin: 0px 10px 0px 20px;
+  background: #FFFFFF; 
+    border:#002856;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.admin_search--container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 25px; 
+  width: 900px; 
+  border: 1px solid #ddd; 
+  margin: 20px 50px 0px 10px;
+  height:40px;
+}
+.admin_search--input {
+  padding-left:20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  flex:0.99;
+  font-size: 12px;
+  color: #333;
+}
+.admin_search--icon {
+  font-size: 20px;
+  color: #333;
+  width: 25px;
+  height: 20px;
+  background: white;
+
+}
+.admin_search--button{
+  border: none;
+  outline: none;
+  height:25px;
+  width:30px;
+  background: white;
+}
+
+.admin_search--input::placeholder {
+  color: #aaa; 
+  font-weight:600;
+  font-size: 12px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
